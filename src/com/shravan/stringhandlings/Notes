@@ -1,0 +1,30 @@
+Interface - CharSequence interface, Comparable interface
+Class - java.lang
+String is implicitly declared final, which means it cannot be subclassed
+String, StringBuffer, StringBuilder
+"==" -> operator compares two object references
+"equals()" -> compares characters inside string object
+
+Primitive Data Types
+--------------------
+char,
+int,
+byte,
+double
+
+String Methods
+--------------
+startsWith()
+endsWith()
+regionMatches()
+equals()
+equalsIgnoreCase()
+toCharArray()
+getChars()
+getBytes()
+charAt()
+length()
+compareTo()
+valueOf()
+indexOf()
+lastIndexOf()

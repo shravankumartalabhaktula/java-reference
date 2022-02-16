@@ -1,0 +1,79 @@
+Package - java.util
+
+Interfaces
+----------
+LinkedList
+HashSet
+TreeSet
+Iterator
+Spliterator
+PrimitiveIterator
+PrimitiveIterator.OfDouble
+Collection - Top of the collections hierarchy
+List
+Set
+Queue
+Deque
+SortedSet
+NavigableSet
+Comparator
+RandomAccess
+ListIterator
+Iterable
+
+=> Collection Interface extends Iterable Interface
+=> List Interface extends Collection Interface
+    -> Duplicate elements are allowed
+    -> Null elements are not allowed
+=> Set Interface extends Collection Interface
+    -> Duplicate elements are not allowed
+    -> Null elements are not allowed
+=> SortedSet Interface extends Set Interface
+    -> Null elements are not allowed
+
+
+
+Exceptions
+-----------
+UnsupportedOperationException
+ClassCastException
+NullPointerException
+IllegalArgumentException
+IllegalStateException
+ArrayStoreException
+IndexOutOfBoundException
+NoSuchElementException
+
+
+Collection Interface Methods
+----------------------------
+add()
+addAll()
+remove()
+removeAll()
+retainAll()
+removeIf()
+clear()
+toArray()
+
+List Interface Methods
+----------------------
+get()
+set()
+indexOf()
+lastIndexOf()
+subList()
+sort()
+of()
+
+Set Interface Methods
+---------------------
+copyOf()
+
+SortedSet Interface Methods
+---------------------------
+first()
+last()
+subSet()
+headSet()
+tailSet()

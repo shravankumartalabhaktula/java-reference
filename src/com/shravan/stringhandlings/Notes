@@ -1,5 +1,6 @@
-Interface - CharSequence interface, Comparable interface
-Class - java.lang
+Interface - CharSequence interface, Comparable interface (String class implements these interfaces)
+Package - java.lang
+Class - String
 String is implicitly declared final, which means it cannot be subclassed
 String, StringBuffer, StringBuilder
 "==" -> operator compares two object references
@@ -28,3 +29,24 @@ compareTo()
 valueOf()
 indexOf()
 lastIndexOf()
+subString()
+concat()
+replace()
+trim()
+strip()
+stripLeading()
+stripTrailing()
+valueOf()
+toLowerCase()
+toUpperCase()
+join()
+capacity()
+ensureCapacity()
+setLength()
+setCharAt()
+append()
+insert()
+reverse()
+delete()
+deleteCharAt()
+replace()

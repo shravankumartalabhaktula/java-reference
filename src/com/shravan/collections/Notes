@@ -1,4 +1,9 @@
 Package - java.util
+Collection classes are not synchronized
+Difference between List and Set:
+1) List can store duplicate elements, whereas Set can't
+2) List can store multiple null elements, whereas Set can store only one null element
+3) List maintains insertion order whereas Set do not maintain the order
 
 Interfaces
 ----------
@@ -20,6 +25,10 @@ Comparator
 RandomAccess
 ListIterator
 Iterable
+Spliterator.OfDouble
+Spliterator.OfInt
+Spliterator.OfLong
+Spliterator.OfPrimitive
 
 => Collection Interface extends Iterable Interface
 => List Interface extends Collection Interface
@@ -30,8 +39,12 @@ Iterable
     -> Null elements are not allowed
 => SortedSet Interface extends Set Interface
     -> Null elements are not allowed
-
-
+=> NavigableSet Interface extends SortedSet Interface
+    -> Null elements are not allowed
+=> Queue Interface extends Collection Interface
+    -> Null elements are not allowed
+=> Deque Interface extends Queue Interface
+    -> Null elements are not allowed
 
 Exceptions
 -----------
@@ -77,3 +90,109 @@ last()
 subSet()
 headSet()
 tailSet()
+
+Queue Interface Methods
+-----------------------
+poll()
+remove()
+element()
+peek()
+offer()
+
+Deque Interface Methods
+-----------------------
+push()
+pop()
+descendingIterator()
+addFirst()
+addLast()
+offerFirst()
+offerLast()
+
+Iterator Interface Methods
+--------------------------
+hasNext()
+next()
+
+ListIterator Interface Methods
+------------------------------
+hasPrevious()
+previous()
+
+Spliterator Interface Methods
+-----------------------------
+tryAdvance()
+forEachRemaining()
+characteristics()
+hasCharacteristics()
+
+Classes
+-------
+ArrayList
+AbstractList
+AbstractSequentialList
+AbstractSet
+HashSet
+LinkedList
+TreeSet
+PriorityQueue
+ArrayDeque
+AbstractCollection
+EnumSet
+
+=> ArrayList class extends the AbstractList and implements List Interface
+=> LinkedList class extends AbstractSequentialList and implements List, Deque and Queue Interface
+=> HashSet class extends AbstractSet and implements Set Interface
+=> LinkedHashSet class extends HashSet
+=> TreeSet class extends AbstractSet and implements NavigableSet Interface
+=> PriorityQueue class extends AbstractQueue and implements Queue Interface
+=> ArrayDeque class extends AbstractCollection and implements Deque Interface
+=> EnumSet extends AbstractSet and implements Set Interface
+
+
+ArrayList Class Methods
+-----------------------
+add()
+remove()
+ensureCapacity()
+trimToSize()
+toArray()
+
+LinkedList Class Methods
+------------------------
+addFirst()
+offerFirst()
+addLast()
+offerLast()
+getFirst()
+peekFirst()
+getLast()
+peekLast()
+removeFirst()
+pollFirst()
+removeLast()
+pollLast()
+get()
+set()
+
+HashSet Class Methods
+---------------------
+add()
+contains()
+remove()
+size()
+
+TreeSet Class Methods
+---------------------
+subSet()
+
+PriorityQueue Class Methods
+---------------------------
+offer()
+poll()
+
+EnumSet Class Methods
+---------------------
+copyOf()
+range()
+of()

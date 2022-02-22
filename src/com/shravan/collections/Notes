@@ -30,6 +30,13 @@ Spliterator.OfInt
 Spliterator.OfLong
 Spliterator.OfPrimitive
 
+Map Interfaces
+---------------
+Map
+Map.Entry
+NavigableMap
+SortedMap
+
 => Collection Interface extends Iterable Interface
 => List Interface extends Collection Interface
     -> Duplicate elements are allowed
@@ -45,6 +52,9 @@ Spliterator.OfPrimitive
     -> Null elements are not allowed
 => Deque Interface extends Queue Interface
     -> Null elements are not allowed
+=> SortedMap Interface extends Map Interface
+=> NavigableMap Interface extends SortedMap
+=> Map.Entry Interface
 
 Exceptions
 -----------
@@ -126,6 +136,42 @@ forEachRemaining()
 characteristics()
 hasCharacteristics()
 
+Map Interface Methods
+---------------------
+get()
+put()
+entrySet()
+keySet()
+values()
+of()
+
+SortedMap Interface Methods
+---------------------------
+headMap()
+tailMap()
+subMap()
+firstKey()
+lastKey()
+
+Map.Entry Interface Methods
+---------------------------
+comparingByKey()
+comparingByValue()
+getKey()
+getValue()
+
+Comparator Interface Methods
+----------------------------
+compare()
+equals()
+reversed()
+reverseOrder()
+nullsFirst()
+nullsLast()
+naturalOrder()
+thenComparing()
+comparing()
+
 Classes
 -------
 ArrayList
@@ -139,8 +185,14 @@ PriorityQueue
 ArrayDeque
 AbstractCollection
 EnumSet
+AbstractMap
+WeakHashMap
+TreeMap
+LinkedHashMap
+IdentityHashMap
+EnumMap
 
-=> ArrayList class extends the AbstractList and implements List Interface
+=> ArrayList class extends the AbstractList and implements List Interface and RandomAccess Interface
 => LinkedList class extends AbstractSequentialList and implements List, Deque and Queue Interface
 => HashSet class extends AbstractSet and implements Set Interface
 => LinkedHashSet class extends HashSet
@@ -148,6 +200,11 @@ EnumSet
 => PriorityQueue class extends AbstractQueue and implements Queue Interface
 => ArrayDeque class extends AbstractCollection and implements Deque Interface
 => EnumSet extends AbstractSet and implements Set Interface
+=> HashMap class extends AbstractMap and implements Map Interface
+=> TreeMap class extends AbstractMap and implements NavigableMap Interface
+=> LinkedHashMap class extends HashMap
+=> IdentityHashMap class extends AbstractMap and implements Map Interface
+=> EnumMap extends AbstractMap and implements Map interface
 
 
 ArrayList Class Methods
@@ -196,3 +253,14 @@ EnumSet Class Methods
 copyOf()
 range()
 of()
+
+HashMap Class Methods
+---------------------
+get()
+put()
+
+LinkedHashMap Class Methods
+---------------------------
+removeEldestEntry()
+put()
+putAll()

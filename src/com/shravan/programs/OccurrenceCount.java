@@ -11,6 +11,7 @@ public class OccurrenceCount {
         String[] word = {"welcome", "to", "geeks", "portal"};
         String str = "geeksforgeeks is a computer science portal for geeks.";
         System.out.println(countOccurrence(word, str));
+        System.out.println(countOccurrenceUsingSplit("portal", str));
     }
 
     public static int countOccurrence(String[] word, String str) {
@@ -27,5 +28,15 @@ public class OccurrenceCount {
                 counter++;
         }
         return counter;
+    }
+
+    public static int countOccurrenceUsingSplit(String word, String str) {
+        String a[] = str.split(" ");
+        int count = 0;
+        for (int i=0; i<a.length; i++) {
+            if (word.equals(a[i]))
+                count++;
+        }
+        return count;
     }
 }

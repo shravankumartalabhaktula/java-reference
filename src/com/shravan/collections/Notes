@@ -66,6 +66,7 @@ IllegalStateException
 ArrayStoreException
 IndexOutOfBoundException
 NoSuchElementException
+ArrayIndexOutOfBoundException
 
 
 Collection Interface Methods
@@ -264,3 +265,26 @@ LinkedHashMap Class Methods
 removeEldestEntry()
 put()
 putAll()
+
+Arrays Class Methods
+--------------------
+asList()
+binarySearch()
+copyOf()
+copyOfRange()
+equals()
+fill()
+sort()
+parallelSort()
+spliterator()
+stream()
+setAll()
+parallelSetAll()
+parallelPrefix()
+compare()
+compareUnsigned()
+mismatch()
+toString()
+hashCode()
+deepToString()
+deepHashCode()
